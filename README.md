@@ -1,0 +1,1 @@
+# AOC_AnaAline_UFRR_LabCircuitos_2026
