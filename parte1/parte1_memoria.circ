@@ -83,11 +83,11 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A0"/>
     </comp>
-    <comp lib="0" loc="(500,420)" name="Splitter">
+    <comp lib="0" loc="(500,400)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="facing" val="west"/>
-      <a name="fanout" val="6"/>
-      <a name="incoming" val="6"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
     <comp lib="1" loc="(1080,170)" name="Controlled Buffer">
       <a name="width" val="8"/>
@@ -98,21 +98,25 @@
     <comp lib="1" loc="(600,290)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="5" loc="(790,110)" name="ROM">
-      <a name="addrWidth" val="6"/>
+    <comp lib="5" loc="(790,100)" name="ROM">
+      <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 6 8
+      <a name="contents">addr/data: 4 8
 0
 </a>
     </comp>
-    <comp lib="5" loc="(790,360)" name="RAM">
-      <a name="addrWidth" val="6"/>
+    <comp lib="5" loc="(790,390)" name="RAM">
+      <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="type" val="nonvolatile"/>
     </comp>
-    <comp lib="5" loc="(860,660)" name="Register">
+    <comp lib="5" loc="(790,700)" name="RAM">
+      <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="BancoDeRegistradores"/>
+    </comp>
+    <comp lib="5" loc="(800,1010)" name="RAM">
+      <a name="addrWidth" val="4"/>
+      <a name="appearance" val="logisim_evolution"/>
     </comp>
     <comp lib="7" loc="(510,210)" name="74139">
       <a name="ShowInternalStructure" val="true"/>
@@ -124,24 +128,26 @@
     <comp lib="9" loc="(335,180)" name="Text">
       <a name="text" val="6 bits de endereçamento ( A5 . . . A0)"/>
     </comp>
-    <wire from="(1030,170)" to="(1060,170)"/>
-    <wire from="(1030,450)" to="(1130,450)"/>
+    <comp lib="9" loc="(909,689)" name="Text">
+      <a name="text" val="Banco de registradores"/>
+    </comp>
+    <comp lib="9" loc="(921,1003)" name="Text">
+      <a name="text" val="E/S"/>
+    </comp>
+    <wire from="(1030,160)" to="(1050,160)"/>
+    <wire from="(1030,480)" to="(1130,480)"/>
+    <wire from="(1050,160)" to="(1050,170)"/>
+    <wire from="(1050,170)" to="(1060,170)"/>
     <wire from="(1070,180)" to="(1070,350)"/>
     <wire from="(1080,170)" to="(1130,170)"/>
-    <wire from="(1130,170)" to="(1130,450)"/>
+    <wire from="(1130,170)" to="(1130,480)"/>
     <wire from="(1130,170)" to="(1170,170)"/>
-    <wire from="(370,210)" to="(430,210)"/>
-    <wire from="(370,240)" to="(440,240)"/>
+    <wire from="(370,210)" to="(490,210)"/>
+    <wire from="(370,240)" to="(480,240)"/>
     <wire from="(370,270)" to="(450,270)"/>
     <wire from="(370,300)" to="(460,300)"/>
     <wire from="(370,330)" to="(470,330)"/>
     <wire from="(370,360)" to="(480,360)"/>
-    <wire from="(430,210)" to="(430,410)"/>
-    <wire from="(430,210)" to="(490,210)"/>
-    <wire from="(430,410)" to="(480,410)"/>
-    <wire from="(440,240)" to="(440,400)"/>
-    <wire from="(440,240)" to="(480,240)"/>
-    <wire from="(440,400)" to="(480,400)"/>
     <wire from="(450,270)" to="(450,390)"/>
     <wire from="(450,390)" to="(480,390)"/>
     <wire from="(460,300)" to="(460,380)"/>
@@ -152,24 +158,29 @@
     <wire from="(480,260)" to="(560,260)"/>
     <wire from="(490,210)" to="(490,250)"/>
     <wire from="(490,250)" to="(540,250)"/>
-    <wire from="(500,420)" to="(540,420)"/>
+    <wire from="(500,400)" to="(540,400)"/>
     <wire from="(520,240)" to="(520,300)"/>
     <wire from="(520,300)" to="(660,300)"/>
+    <wire from="(540,1020)" to="(800,1020)"/>
     <wire from="(540,240)" to="(540,250)"/>
-    <wire from="(540,330)" to="(540,370)"/>
+    <wire from="(540,330)" to="(540,400)"/>
     <wire from="(540,330)" to="(780,330)"/>
-    <wire from="(540,370)" to="(540,420)"/>
-    <wire from="(540,370)" to="(790,370)"/>
+    <wire from="(540,400)" to="(540,710)"/>
+    <wire from="(540,400)" to="(790,400)"/>
+    <wire from="(540,710)" to="(540,1020)"/>
+    <wire from="(540,710)" to="(790,710)"/>
     <wire from="(560,240)" to="(560,260)"/>
     <wire from="(580,240)" to="(580,260)"/>
     <wire from="(580,290)" to="(580,350)"/>
     <wire from="(580,350)" to="(1070,350)"/>
     <wire from="(600,240)" to="(600,260)"/>
     <wire from="(600,290)" to="(600,420)"/>
-    <wire from="(600,420)" to="(790,420)"/>
+    <wire from="(600,420)" to="(780,420)"/>
     <wire from="(660,240)" to="(660,300)"/>
-    <wire from="(780,120)" to="(780,330)"/>
-    <wire from="(780,120)" to="(790,120)"/>
+    <wire from="(780,110)" to="(780,330)"/>
+    <wire from="(780,110)" to="(790,110)"/>
+    <wire from="(780,420)" to="(780,450)"/>
+    <wire from="(780,450)" to="(790,450)"/>
   </circuit>
   <circuit name="parte1_memoria">
     <a name="appearance" val="logisim_evolution"/>
