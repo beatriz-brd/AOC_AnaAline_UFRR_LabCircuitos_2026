@@ -178,6 +178,7 @@
     <comp lib="0" loc="(510,490)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Endereco"/>
+      <a name="radix" val="16"/>
       <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(550,540)" name="Pin">
