@@ -178,12 +178,14 @@
     <comp lib="0" loc="(510,490)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Endereco"/>
+      <a name="labelloc" val="east"/>
       <a name="radix" val="16"/>
       <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(550,540)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="entradaDados"/>
+      <a name="radix" val="16"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(600,490)" name="Splitter">
@@ -741,6 +743,39 @@ T0 - T2</a>
       <a name="label" val="fim"/>
       <a name="width" val="6"/>
     </comp>
+    <comp lib="0" loc="(390,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="fim"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(400,310)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="endereco"/>
+      <a name="labelloc" val="south"/>
+      <a name="radix" val="16"/>
+      <a name="type" val="output"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(420,290)" name="Splitter">
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="2"/>
+      <a name="bit4" val="2"/>
+      <a name="bit5" val="2"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(440,400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ClockV"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(470,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="offset"/>
+      <a name="type" val="output"/>
+    </comp>
     <comp lib="0" loc="(480,470)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Dados"/>
@@ -758,28 +793,25 @@ T0 - T2</a>
       <a name="label" val="Reset"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(540,400)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="ClockV"/>
+    <comp lib="0" loc="(490,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="indice"/>
       <a name="labelloc" val="south"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(600,440)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="fim"/>
-      <a name="width" val="6"/>
+    <comp lib="0" loc="(510,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="tag"/>
+      <a name="labelloc" val="south"/>
+      <a name="type" val="output"/>
+      <a name="width" val="3"/>
     </comp>
     <comp lib="0" loc="(600,480)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="fim"/>
-      <a name="width" val="6"/>
-    </comp>
-    <comp lib="0" loc="(610,440)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="endereco"/>
-      <a name="labelloc" val="south"/>
-      <a name="radix" val="16"/>
-      <a name="type" val="output"/>
       <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(650,280)" name="Pin">
@@ -842,11 +874,11 @@ T0 - T2</a>
       <a name="max" val="0x7"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="9" loc="(1275,280)" name="Text">
-      <a name="font" val="SansSerif bold 5"/>
-      <a name="text" val="tag advinda do contador"/>
+    <comp lib="9" loc="(1318,299)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="&lt;- tag advinda do contador"/>
     </comp>
-    <comp lib="9" loc="(1385,415)" name="Text">
+    <comp lib="9" loc="(1367,347)" name="Text">
       <a name="font" val="SansSerif bold 5"/>
       <a name="text" val="se conecta ao tunel de mesmo nome, que faz ligação com o endereço recebido pela cache"/>
     </comp>
@@ -866,6 +898,17 @@ T0 - T2</a>
     <wire from="(1210,400)" to="(1270,400)"/>
     <wire from="(1240,260)" to="(1240,300)"/>
     <wire from="(1290,380)" to="(1360,380)"/>
+    <wire from="(390,310)" to="(400,310)"/>
+    <wire from="(400,290)" to="(400,310)"/>
+    <wire from="(400,290)" to="(420,290)"/>
+    <wire from="(440,260)" to="(460,260)"/>
+    <wire from="(440,270)" to="(470,270)"/>
+    <wire from="(440,280)" to="(500,280)"/>
+    <wire from="(440,400)" to="(600,400)"/>
+    <wire from="(460,230)" to="(460,260)"/>
+    <wire from="(460,230)" to="(470,230)"/>
+    <wire from="(470,250)" to="(470,270)"/>
+    <wire from="(470,250)" to="(490,250)"/>
     <wire from="(480,470)" to="(500,470)"/>
     <wire from="(480,510)" to="(490,510)"/>
     <wire from="(480,550)" to="(490,550)"/>
@@ -873,14 +916,14 @@ T0 - T2</a>
     <wire from="(490,520)" to="(600,520)"/>
     <wire from="(490,540)" to="(490,550)"/>
     <wire from="(490,540)" to="(550,540)"/>
+    <wire from="(500,270)" to="(500,280)"/>
+    <wire from="(500,270)" to="(510,270)"/>
     <wire from="(500,470)" to="(500,500)"/>
     <wire from="(500,500)" to="(600,500)"/>
-    <wire from="(540,400)" to="(600,400)"/>
     <wire from="(550,410)" to="(550,540)"/>
     <wire from="(550,410)" to="(610,410)"/>
     <wire from="(550,540)" to="(600,540)"/>
     <wire from="(600,390)" to="(600,400)"/>
-    <wire from="(600,440)" to="(610,440)"/>
     <wire from="(610,390)" to="(610,410)"/>
     <wire from="(620,370)" to="(640,370)"/>
     <wire from="(640,280)" to="(640,370)"/>
@@ -1174,10 +1217,8 @@ T0 - T2</a>
     <wire from="(260,1090)" to="(260,1180)"/>
     <wire from="(260,1090)" to="(440,1090)"/>
     <wire from="(260,1180)" to="(440,1180)"/>
-    <wire from="(260,170)" to="(260,260)"/>
+    <wire from="(260,170)" to="(260,300)"/>
     <wire from="(260,170)" to="(310,170)"/>
-    <wire from="(260,260)" to="(260,300)"/>
-    <wire from="(260,260)" to="(440,260)"/>
     <wire from="(260,300)" to="(260,400)"/>
     <wire from="(260,300)" to="(440,300)"/>
     <wire from="(260,400)" to="(260,500)"/>
@@ -1244,7 +1285,9 @@ T0 - T2</a>
     <wire from="(400,1030)" to="(400,1200)"/>
     <wire from="(400,1030)" to="(440,1030)"/>
     <wire from="(400,1200)" to="(440,1200)"/>
-    <wire from="(400,210)" to="(400,470)"/>
+    <wire from="(400,210)" to="(400,260)"/>
+    <wire from="(400,260)" to="(400,470)"/>
+    <wire from="(400,260)" to="(440,260)"/>
     <wire from="(400,470)" to="(400,620)"/>
     <wire from="(400,470)" to="(440,470)"/>
     <wire from="(400,620)" to="(400,770)"/>
