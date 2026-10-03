@@ -69,6 +69,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Z"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(820,380)" name="AND Gate">
       <a name="negate1" val="true"/>
