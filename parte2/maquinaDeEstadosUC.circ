@@ -69,6 +69,19 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Reset"/>
     </comp>
+    <comp lib="0" loc="(480,720)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="2"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="0"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(520,690)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
     <comp lib="1" loc="(280,380)" name="NOT Gate"/>
     <comp lib="1" loc="(620,500)" name="AND Gate">
       <a name="size" val="30"/>
@@ -88,6 +101,7 @@
     <comp lib="1" loc="(740,320)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
+    <comp lib="10" loc="(540,640)" name="BCD_to_7_Segment_decoder"/>
     <comp lib="5" loc="(410,220)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
@@ -97,28 +111,33 @@
     <comp lib="5" loc="(410,510)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="9" loc="(428,492)" name="Text">
+    <comp lib="6" loc="(540,640)" name="7-Segment Display"/>
+    <comp lib="9" loc="(425,490)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
     <comp lib="9" loc="(430,210)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
-    <comp lib="9" loc="(431,349)" name="Text">
+    <comp lib="9" loc="(430,345)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp lib="9" loc="(592,525)" name="Text">
+    <comp lib="9" loc="(590,525)" name="Text">
       <a name="font" val="SansSerif bold 9"/>
       <a name="text" val="LogicaD0"/>
     </comp>
-    <comp lib="9" loc="(636,268)" name="Text">
+    <comp lib="9" loc="(615,736)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="estado atual"/>
+    </comp>
+    <comp lib="9" loc="(635,265)" name="Text">
       <a name="font" val="SansSerif bold 9"/>
       <a name="text" val="LogicaD2"/>
     </comp>
-    <comp lib="9" loc="(643,467)" name="Text">
+    <comp lib="9" loc="(640,465)" name="Text">
       <a name="font" val="SansSerif bold 9"/>
       <a name="text" val="Sinal de estado S1"/>
     </comp>
-    <comp lib="9" loc="(675,357)" name="Text">
+    <comp lib="9" loc="(675,355)" name="Text">
       <a name="font" val="SansSerif bold 9"/>
       <a name="text" val="logicaD1"/>
     </comp>
@@ -156,11 +175,20 @@
     <wire from="(430,280)" to="(430,290)"/>
     <wire from="(430,420)" to="(430,460)"/>
     <wire from="(430,570)" to="(430,580)"/>
+    <wire from="(460,230)" to="(510,230)"/>
     <wire from="(460,270)" to="(560,270)"/>
-    <wire from="(460,370)" to="(530,370)"/>
+    <wire from="(460,370)" to="(500,370)"/>
     <wire from="(460,410)" to="(540,410)"/>
-    <wire from="(460,520)" to="(540,520)"/>
+    <wire from="(460,520)" to="(490,520)"/>
     <wire from="(460,560)" to="(550,560)"/>
+    <wire from="(480,720)" to="(480,730)"/>
+    <wire from="(480,730)" to="(550,730)"/>
+    <wire from="(490,520)" to="(490,700)"/>
+    <wire from="(490,520)" to="(540,520)"/>
+    <wire from="(500,370)" to="(500,700)"/>
+    <wire from="(500,370)" to="(530,370)"/>
+    <wire from="(510,230)" to="(510,700)"/>
+    <wire from="(520,690)" to="(520,700)"/>
     <wire from="(530,290)" to="(530,370)"/>
     <wire from="(530,290)" to="(620,290)"/>
     <wire from="(540,410)" to="(540,430)"/>
@@ -170,6 +198,7 @@
     <wire from="(550,310)" to="(550,560)"/>
     <wire from="(550,310)" to="(620,310)"/>
     <wire from="(550,560)" to="(560,560)"/>
+    <wire from="(550,720)" to="(550,730)"/>
     <wire from="(560,270)" to="(560,410)"/>
     <wire from="(560,410)" to="(560,490)"/>
     <wire from="(560,410)" to="(620,410)"/>
