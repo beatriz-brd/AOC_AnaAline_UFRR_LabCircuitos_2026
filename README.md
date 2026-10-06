@@ -26,7 +26,7 @@ Declaração do uso de IA:
 
 Divisão do trabalho entre os integrantes:
 - Aline Ribeiro Lacerda: Parte I -> O Circuito do mapeamento de memória, os testes e as tabelas correspondentes
-- Parte II -> Componente 09 Detector da sequência"101", Máquina de estados da UC. Escrever o Relatório do LAB.
+- Parte II -> Componente 09 Detector da sequência"101". Máquina de estados da UC. Escrever o Relatório do LAB. Datapath. Tabela de tempo. Testes da UCcabeada.
   
 - Ana Beatriz Silva Melo: Parte I -> A Cache, os testes as tabelas e planilhas correspondentes a cache.
 - Parte II -> UC microprogramada, testes correspondentes a UC microprogramada, mapas de karnaugh relacionados a parte II.
